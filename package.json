@@ -1,0 +1,20 @@
+{
+  "name": "product-hunt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoEscaleira/product-hunt.git"
+  },
+  "keywords": [],
+  "author": "marcoescaleira2000@gmail.com",
+  "license": "ISC",
+  "homepage": "https://github.com/MarcoEscaleira/product-hunt#readme",
+  "scripts": {
+    
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
