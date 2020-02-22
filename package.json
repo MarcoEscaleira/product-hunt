@@ -12,9 +12,14 @@
   "license": "ISC",
   "homepage": "https://github.com/MarcoEscaleira/product-hunt#readme",
   "scripts": {
-    
+    "start:dev": "nodemon server.js"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.9.2",
+    "require-dir": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
