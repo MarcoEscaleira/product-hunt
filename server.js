@@ -7,11 +7,17 @@ const app = express();
 app.use(express.json());
 
 // Start DB
-mongoose.connect("mongodb://localhost:27017/product-hunt", {
-  useUnifiedTopology: true,
-  useNewUrlParser: true,
-  useFindAndModify: true
-});
+const mongodbPort = 27017;
+const dbName = "product-hunt";
+try {
+  mongoose.connect(`mongodb://localhost:${mongodbPort}/${dbName}`, {
+    useUnifiedTopology: true,
+    useNewUrlParser: true,
+    useFindAndModify: true
+  }); 
+} catch(error) {
+  console.log(`Couldn't connect to the database. Please check if you have mongodb opened or port is correct (${mongodbPort})`, error);
+}
 
 // Importing models
 requireDir("./src/models/");
